@@ -49,21 +49,21 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a[href] {
-    color: var(--text-color);
+a {
+    color: var(--text-color); /* Targets anchor elements */
     text-decoration: none;
 }
 
-a[href]:visited {
-    font-style: italic;
+a:visited {
+    font-style: italic; /* Italicizes the text for visited links */
 }
 
-a[href]:hover {
-    text-decoration: underline;
+a:hover {
+    text-decoration: underline; /* Adds an underline when hovering over links */
 }
 
-a[href]:active {
-    background-color: var(--color-light-grey);
+a:active {
+    background-color: var(--color-light-grey); /* Sets the background color for active links */
 }
 
 .visually-hidden {

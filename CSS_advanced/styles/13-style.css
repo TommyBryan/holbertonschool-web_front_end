@@ -92,8 +92,3 @@ a[href]:active {
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
-
-a[href] {
-    color: var(--text-color);
-    text
-}

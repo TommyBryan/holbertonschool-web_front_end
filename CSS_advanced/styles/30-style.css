@@ -237,7 +237,7 @@ a:active {
 .card-work .card-title a {
     display: block; /* Display as block */
     text-decoration: none; /* Remove text decoration */
-    padding: 45%; /* Set padding on the top to 45% */
+    padding-top: 45%; /* Correct padding-top value */
 }
 
 .card-work .card-title a::after {

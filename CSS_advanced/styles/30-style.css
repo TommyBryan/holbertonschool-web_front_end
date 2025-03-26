@@ -215,39 +215,42 @@ a:active {
 }
 
 .card-work .card-inner {
-    position: absolute;
-    top: -0.1rem;
-    left: -0.1rem;
-    right: -0.1rem;
-    z-index: 1;
+    position: absolute; /* Absolutely position the element */
+    top: -0.1rem; /* Vertically position with -0.1rem on the top */
+    left: -0.1rem; /* Horizontally position with -0.1rem on the left */
+    right: -0.1rem; /* Horizontally position with -0.1rem on the right */
+    z-index: 1; /* Set z-index to 1 */
 }
 
 .card-work:hover .card-inner {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Set background color on hover */
 }
 
 .card-work .card-title {
-    text-align: center;
-    margin: 0;
-    opacity: 0;
-    height: 100%;
-    position: relative;
+    text-align: center; /* Center align the text */
+    margin: 0; /* Margins all around should be 0 */
+    opacity: 0; /* Set opacity to its lowest value */
+    height: 100%; /* Set height to 100% */
+    position: relative; /* Set position to relative */
 }
 
 .card-work .card-title a {
-    display: block;
-    text-decoration: none;
-    padding: 45%;
+    display: block; /* Display as block */
+    text-decoration: none; /* Remove text decoration */
+    padding: 45%; /* Set padding on the top to 45% */
 }
 
-.card-work .card-title::after {
-    position: absolute;
-    position: 0;
-    content: "";
+.card-work .card-title a::after {
+    position: absolute; /* Absolutely position the pseudo element */
+    top: 0; /* Set top position to 0 */
+    right: 0; /* Set right position to 0 */
+    left: 0; /* Set left position to 0 */
+    bottom: 0; /* Set bottom position to 0 */
+    content: ""; /* Set content to an empty value */
 }
 
-.card-work .card-title:hover {
-    opacity: 1;
+.card-work:hover .card-title {
+    opacity: 1; /* Set opacity to 1 on hover */
 }
 
 .section {

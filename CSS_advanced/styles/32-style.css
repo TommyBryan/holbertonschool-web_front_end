@@ -75,7 +75,7 @@
     --header-logo-link-left: 0;
 
     --transition-duration: .3s;
-    --transition-cubic-beizer: cubic-bezier(0.17, 0.67, 0, 1.01);
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.0);
 }
 
 /* Box-sizing for all elements */
@@ -151,7 +151,8 @@ a:active {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
-    transition: color var(--transition-duration), background-color var(--transition-duration); /* Add transition */
+    transition-duration: var(--transition-duration);
+    transition-property: background-color;
 }
 
 .navbar-menu {
@@ -191,7 +192,7 @@ a:active {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
-    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Add transition */
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
@@ -225,7 +226,7 @@ a:active {
     left: -0.1rem; /* Horizontally position with -0.1rem on the left */
     right: -0.1rem; /* Horizontally position with -0.1rem on the right */
     z-index: 1; /* Set z-index to 1 */
-    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Add transition */
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-inner {
@@ -234,7 +235,7 @@ a:active {
 
 .card-work:hover .card-image {
     transform: scale(1.2); /* Apply scale transform */
-    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Add transition */
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {

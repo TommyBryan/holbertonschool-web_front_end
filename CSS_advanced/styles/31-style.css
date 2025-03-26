@@ -379,7 +379,7 @@ ul.row {
     position: absolute; /* Set position to absolute */
     top: -4.5rem; /* Set top position to -4.5rem */
     left: -1rem; /* Set left position to -1rem */
-    text: #efeded; /* Set text color to #efeded */
+    color: #efeded; /* Corrected property to 'color' */
     font-size: 10rem; /* Set font size to 10rem */
     z-index: -1; /* Set z-index to -1 */
 }

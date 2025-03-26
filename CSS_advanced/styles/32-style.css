@@ -74,8 +74,8 @@
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
 
-    --transition-duration: .3s;
-    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+    --transition-duration: .3s; /* Custom property for transition duration */
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01); /* Custom property for cubic-bezier */
 }
 
 /* Box-sizing for all elements */
@@ -151,8 +151,8 @@ a:active {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
-    transition-duration: var(--transition-duration);
-    transition-property: background-color;
+    transition-duration: var(--transition-duration); /* Set transition duration */
+    transition-property: color, background-color; /* Apply transition to color and background-color */
 }
 
 .navbar-menu {
@@ -192,7 +192,7 @@ a:active {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Add transition shorthand */
 }
 
 .nav .nav-item:hover .nav-link::before {
@@ -226,7 +226,7 @@ a:active {
     left: -0.1rem; /* Horizontally position with -0.1rem on the left */
     right: -0.1rem; /* Horizontally position with -0.1rem on the right */
     z-index: 1; /* Set z-index to 1 */
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Add transition */
 }
 
 .card-work:hover .card-inner {
@@ -235,7 +235,7 @@ a:active {
 
 .card-work:hover .card-image {
     transform: scale(1.2); /* Apply scale transform */
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Add transition */
 }
 
 .card-work:hover .card-outer {

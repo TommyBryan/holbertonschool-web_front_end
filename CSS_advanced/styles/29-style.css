@@ -189,9 +189,9 @@ a:active {
     height: 0.2rem;
 }
 
-.nav .nav-link:hover::before{
-    background-color: var(--color-primary);
-    width: 100%;
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary); /* Set background color to color-primary */
+    width: 100%; /* Set width to 100% */
 }
 
 .visually-hidden {
